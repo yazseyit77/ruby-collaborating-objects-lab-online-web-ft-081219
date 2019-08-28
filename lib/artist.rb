@@ -4,4 +4,4 @@ class Artist
     @name = name
   end
 
-ed
+end
