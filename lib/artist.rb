@@ -7,6 +7,10 @@ class Artist
     songs = []
   end
 
+  def add_song(name)
+
+  end
+
   def self.all
     @@all
   end
