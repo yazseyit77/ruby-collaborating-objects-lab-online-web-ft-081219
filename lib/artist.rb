@@ -24,4 +24,8 @@ class Artist
   def find_or_create_by_name(name)
 
   end
+
+  def self.find(name)
+    self.all.detect{|artist| artist.name = name}
+  end
 end
