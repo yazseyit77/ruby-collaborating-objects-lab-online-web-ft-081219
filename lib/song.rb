@@ -17,7 +17,14 @@ class Song
     song
   end
 
-  def artist_name
-    artist.name ? artist.name.self : nil
+  def artist_name=(name)
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
   end
+
+
+
 end
