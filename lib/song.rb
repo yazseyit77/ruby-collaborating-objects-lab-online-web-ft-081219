@@ -11,6 +11,10 @@ class Song
     @all
   end
 
+  def self.new_by_filename(song_name)
+
+  end
+  
   def artist_name
     artist.name ? artist.name.self : nil
   end
